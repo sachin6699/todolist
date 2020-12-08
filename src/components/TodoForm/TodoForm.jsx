@@ -23,8 +23,9 @@ const TodoForm = ({ addTodo }) => {
       addTodo({ ...todo, id: uuid() });
       setTodo({ ...todo, task: "" });
 
+      // only gets called if   the todoTask is not empty, trim removes white space (function)
       // reset the form by calling set to do with a new object that has the old property spread onto it and an updated task property, with an empty string
-    } // only gets called if   the todoTask is not empty, trim removes white space (function)
+    }
   };
 
   return (
